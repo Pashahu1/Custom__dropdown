@@ -1,0 +1,40 @@
+.btn {
+  position: relative;
+  width: 24px;
+  height: 2px;
+  background-color: gray;
+}
+
+.btn::before {
+  position: absolute;
+  top: -5px;
+  content: '';
+  width: 24px;
+  height: 2px;
+  background-color: gray;
+}
+
+.btn::after {
+  position: absolute;
+  top: 5px;
+  content: '';
+  width: 24px;
+  height: 2px;
+  background-color: gray;
+}
+
+.btn__menue {
+  width: 50%;
+  height: 50%;
+ background-color: aqua;
+}
+
+.btn__nav  {
+  background-color: aqua;
+ transform: translateX(-100%);
+
+}
+.btn__nav--active {
+  background-color: aqua;
+  transform: translateX(0);
+}
