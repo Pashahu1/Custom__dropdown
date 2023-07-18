@@ -3,6 +3,8 @@
 const dropdown = document.querySelector('.dropdown');
 const trigger = dropdown.querySelector('.dropdown__trigger');
 const content = dropdown.querySelector('.dropdown__content');
+const burgeer = document.querySelector('.btn');
+const burgeerMenue = document.querySelector('.btn__nav');
 
 // const initialHeight = content.clientHeight; - вираховує усю висоту до я кого розгорнеться
 // content.style.height = '0';  - встановлює стилі висоти на 0
@@ -19,6 +21,10 @@ dropdown.addEventListener('contextmenu', (event) => {
   // }
 
   dropdown.classList.toggle('dropdown--active');
+})
+
+burgeer.addEventListener('click', () => {
+  burgeerMenue.classList.toggle('btn__nav--active')
 })
 
 // подія click - для лівої кнопки мишки
